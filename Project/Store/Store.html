@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sari Sari Store</title>
+    <style>
+		*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+	}
+        body {
+            background-color: #9CAF88;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            border: 1px transparent;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 7px black;
+            border-radius: 10px;
+            margin-top: 70px;
+        }
+        img {
+            max-width: 200px;
+            height: 300px;
+            width: 400px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        h1, p {
+            text-align: center;
+            cursor: pointer;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        #total {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        a {
+            text-align: center;
+            position: relative;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            font-family: Arial;
+            scroll-behavior: smooth;
+        }
+        button {
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="top" style="background: #DFE6DA; padding: 10px;">AMBAT Store</h1>
+    <div id="total" style="text-align: end;">Total Amount: PHP0.00 | Quantity: 0</div>
+    
+
+    <label><h5>Select discount</h5><input type="radio" name="discount" value="0.20">Senior 20%</label>
+        <label><input type="radio" name="discount" value="0.30">PWD 30%</label>
+        <label><input type="radio" name="discount" value="0.10">Student 10%</label>  <br>
+        <button id="checkout-button">Check Out</button><br>
+        
+        <a href="F:/Store/Stocks.html"target="_blank">Get Stocks</a>
+    <div class="grid-container">
+        <a href="#grid_jeans">
+            <div class="grid-item"><img src="image/jeans.jpg" alt="Jeans"><br>Jeans</div>
+        </a>
+        <a href="#grid_tshirts">
+            <div class="grid-item"><img src="image/t-shirts.jpg" alt="T-shirts"><br>T-shirts</div>
+        </a>
+        <a href="#grid_perfumes">
+            <div class="grid-item"><img src="image/perfumes.jpg" alt="Perfumes"><br>Perfumes</div>
+        </a>
+        <a href="#grid_sando">
+            <div class="grid-item"><img src="image/sando.jpg" alt="Sando"><br>Sando</div>
+        </a>
+        <a href="#grid_toys">
+            <div class="grid-item"><img src="image/toys.jpg" alt="Toys"><br>Toys</div>
+        </a>
+    </div>
+    <h1 style="margin-top: 300px; margin-bottom: -300px;">Jeans</h1>
+    <a href="#top"><p style="margin-top: 300px; margin-bottom: -260px;">back to top</p></a>
+    <div style="margin-left: 250px; margin-top: 200px;" class="grid-container" id="grid_jeans">
+        <div class="grid-item"><img src="image/cutjeans.jpg" alt="Cut Jeans"><br>Cut Jeans - 250
+            <div class="checkbox-container">
+                <input type="checkbox" id="jeans1" data-price="250">
+                <label for="jeans1">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+                
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/jeans1.jpg" alt="Maong Jeans"><br>Maong Jeans - 300
+            <div class="checkbox-container">
+                <input type="checkbox" id="jeans2" data-price="300">
+                <label for="jeans2">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+               
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/baggyjeans.jpg" alt="Baggy Jeans"><br>Baggy Jeans - 499
+            <div class="checkbox-container">
+                <input type="checkbox" id="jeans3" data-price="499">
+                <label for="jeans3">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+                
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/rippedjeans.jpg" alt="Ripped Jeans"><br>Ripped Jeans - 260
+            <div class="checkbox-container">
+                <input type="checkbox" id="jeans4" data-price="260">
+                <label for="jeans4">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+              
+            </div>
+        </div>
+    </div>
+    <h1 style="margin-top: 300px; margin-bottom: -300px;">T-shirts</h1>
+    <a href="#top"><p style="margin-top: 300px; margin-bottom: -270px;">back to top</p></a>
+    <div style="margin-left: 250px; margin-top: 200px;" class="grid-container" id="grid_tshirts">
+        <div class="grid-item"><img src="image/tshirt1.jpg" alt="The Cub"><br>The Cub - 599
+            <div class="checkbox-container">
+                <input type="checkbox" id="tshirt1" data-price="599">
+                <label for="tshirt1">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/tshirt2.jpg" alt="WorldWide"><br>WorldWide - 769
+            <div class="checkbox-container">
+                <input type="checkbox" id="tshirt2" data-price="769">
+                <label for="tshirt2">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/tshirt3.jpg" alt="Affix"><br>Affix - 870
+            <div class="checkbox-container">
+                <input type="checkbox" id="tshirt3" data-price="870">
+                <label for="tshirt3">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/tshirt4.jpg" alt="BrownDog"><br>BrownDog - 560
+            <div class="checkbox-container">
+                <input type="checkbox" id="tshirt4" data-price="560">
+                <label for="tshirt4">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+    </div>
+    <h1 style="margin-top: 300px; margin-bottom: -290px;">Perfumes</h1>
+    <a href="#top"><p style="margin-top: 300px; margin-bottom: -270px;">back to top</p></a>
+    <div style="margin-left: 250px; margin-top: 200px;" class="grid-container" id="grid_perfumes">
+        <div class="grid-item"><img src="image/chanel1.jpg" alt="Mobble"><br>Mobble - 240
+            <div class="checkbox-container">
+                <input type="checkbox" id="perfume1" data-price="240">
+                <label for="perfume1">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/chanel2.jpg" alt="Paris"><br>Paris - 590
+            <div class="checkbox-container">
+                <input type="checkbox" id="perfume2" data-price="590">
+                <label for="perfume2">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/chanel3.jpg" alt="N^5"><br>N^5 - 299
+            <div class="checkbox-container">
+                <input type="checkbox" id="perfume3" data-price="299">
+                <label for="perfume3">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/chanel4.jpg" alt="Chance"><br>Chance - 789
+            <div class="checkbox-container">
+                <input type="checkbox" id="perfume4" data-price="789">
+                <label for="perfume4">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+    </div>
+    <h1 style="margin-top: 300px; margin-bottom: -300px;">Sando</h1>
+    <a href="#top"><p style="margin-top: 300px; margin-bottom: -250px;">back to top</p></a>
+    <div style="margin-left: 250px; margin-top: 200px;" class="grid-container" id="grid_sando">
+        <div class="grid-item"><img src="image/Sando1.jpg" alt="Lener"><br>Lener - 460
+            <div class="checkbox-container">
+                <input type="checkbox" id="sando1" data-price="460">
+                <label for="sando1">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/sando2.jpg" alt="OMG"><br>OMG - 778
+            <div class="checkbox-container">
+                <input type="checkbox" id="sando2" data-price="778">
+                <label for="sando2">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/sando3.jpg" alt="Allibur"><br>Allibur - 899
+            <div class="checkbox-container">
+                <input type="checkbox" id="sando3" data-price="899">
+                <label for="sando3">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/sando4.jpg" alt="Los Angeles"><br>Los Angeles - 289
+            <div class="checkbox-container">
+                <input type="checkbox" id="sando4" data-price="289">
+                <label for="sando4">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+    </div>
+    <h1>Toys</h1>
+    <a href="#top"><p>back to top</p></a>
+    <div style="margin-left: 250px; margin-top: 200px; margin-bottom: 200px;" class="grid-container" id="grid_toys">
+        <div class="grid-item"><img src="image/toys1.jpg" alt="Alphabet"><br>Alphabet - 199
+            <div class="checkbox-container">
+                <input type="checkbox" id="toys1" data-price="199">
+                <label for="toys1">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/toys2.jpg" alt="Bears"><br>Bears - 100
+            <div class="checkbox-container">
+                <input type="checkbox" id="toys2" data-price="100">
+                <label for="toys2">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+             
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/toys3.jpg" alt="Car"><br>Car - 120
+            <div class="checkbox-container">
+                <input type="checkbox" id="toys3" data-price="120">
+                <label for="toys3">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+            </div>
+        </div>
+        <div class="grid-item"><img src="image/toys4.jpg" alt="Yoyo"><br>Yoyo - 80
+            <div class="checkbox-container">
+                <input type="checkbox" id="toys4" data-price="80">
+                <label for="toys4">Add to Cart</label>
+                <p>Stocks: <span class="stock">3</span></p>
+                <button class="minus">+</button>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const totalDisplay = document.getElementById('total');
+    const discountRadios = document.querySelectorAll('input[name="discount"]');
+    let total = 0;
+    let quantity = 0;
+
+    function updateTotal() {
+        total = 0;
+        quantity = 0;
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                const price = parseFloat(checkbox.getAttribute('data-price'));
+                total += price;
+                quantity++;
+            }
+        });
+        totalDisplay.textContent = `Total Amount: PHP${total.toFixed(2)} | Quantity: ${quantity}`;
+    }
+
+    function applyDiscount() {
+        let discount = 0;
+        discountRadios.forEach(radio => {
+            if (radio.checked) {
+                discount = parseFloat(radio.value);
+            }
+        });
+        return total - (total * discount);
+    }
+
+    function updateStock(checkbox, increment) {
+        const stockElement = checkbox.parentElement.querySelector('.stock');
+        let stock = parseInt(stockElement.textContent);
+        if (increment) {
+            stock++;
+        } else {
+            stock--;
+        }
+        stockElement.textContent = stock;
+        checkbox.setAttribute('data-stock', stock);
+    }
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', (event) => {
+            const checked = event.target.checked;
+            updateTotal();
+            if (checked) {
+                updateStock(event.target, false);
+            } else {
+                updateStock(event.target, true);
+            }
+        });
+    });
+
+    document.querySelectorAll('.plus').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const checkbox = event.target.parentElement.querySelector('input[type="checkbox"]');
+            updateStock(checkbox, true);
+        });
+    });
+
+    document.querySelectorAll('.minus').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const checkbox = event.target.parentElement.querySelector('input[type="checkbox"]');
+            updateStock(checkbox, false);
+        });
+    });
+
+    document.querySelector('#checkout-button').addEventListener('click', () => {
+        const totalWithDiscount = applyDiscount();
+        alert(`Total Amount after Discount: PHP${totalWithDiscount.toFixed(2)} | Quantity: ${quantity}`);
+    });
+
+    function goToProject() {
+        window.location.href = "E:/Store/Stocks.html";
+    }
+});
+
+    </script>
+</body>
+</html>

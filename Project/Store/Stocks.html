@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Stocks</title>
+</head>
+<body>
+<style>
+button{
+    border-radius: 50px;
+    align-items: center;
+}
+
+h1{
+	text-align: center;
+}
+body{
+    background-color: #9CAF88;
+}
+</style>
+<h1>Stocks</h1>
+<hr>
+<h2>Jeans</h2>
+<button id="addStockBtn">Add Stocks</button>
+<h2>T-shirts</h2>
+<button onclick="goToProject()">Add Stocks</button>
+<h2>Perfumes</h2>
+<button onclick="goToProject()">Add Stocks</button>
+<h2>Sando</h2>
+<button onclick="goToProject()">Add Stocks</button>
+<h2>Toys</h2>
+<button onclick="goToProject()">Add Stocks</button><br><br>
+
+
+<button id="closeTabBtn">Close Tab</button>
+
+<script>
+document.getElementById("closeTabBtn").addEventListener("click", function() { 
+  if (confirm("Are you sure you want to close this tab?")) {
+    window.close();
+  }
+});
+document.getElementById("addStockBtn").addEventListener("click", function() {
+  // Retrieve the current stock value from localStorage (or initialize it to 0)
+  let stock = localStorage.getItem('stock') || 0;
+  stock = parseInt(stock);
+  
+  // Increment the stock value
+  stock += 1;
+  
+  // Store the new stock value back to localStorage
+  localStorage.setItem('stock', stock);
+  
+  // Optionally, open the new tab to show the updated stock
+  window.open('show_stock.html', '_blank');
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>

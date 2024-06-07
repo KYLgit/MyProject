@@ -1,0 +1,125 @@
+.container{
+	width: 1500px ;
+		height: 1900px solid black;
+		border:  ;
+		padding:5px;
+		margin: 0 auto;
+		display: absolute;
+		
+}
+
+
+p, u{
+    color: maroon;
+    margin: 0;
+ 
+}
+img{
+    margin: 50;
+}
+h5{
+    color:white;
+    background-color: maroon;
+    margin: 10;
+    
+}
+
+
+.width{
+    width: 500;
+}
+p.p{
+    color: black;
+    
+}
+
+.border, .none{
+    border: none;
+}
+.un{
+	
+}
+.center {
+	text-align: center;
+}
+
+.black{
+    color: black;
+}
+.date-value1 {
+    margin-left: 200px; 
+    color: black;
+}
+.date-value2 {
+    margin-left: 97px;
+    color: black;
+}
+.date-value3 {
+    margin-left: 144px;
+    color: black;
+}
+.date-value4 {
+    margin-left: 66px; 
+    color: black;
+}
+hr{
+    color: white;
+}
+
+.tuition{
+    margin-left: 300px;
+  }
+  .misc{
+    margin-left: 313px;
+  }
+  .ld{
+    margin-left: 325px;
+  }
+  .lab{
+    margin-left: 275px;
+  }
+  .srf{
+    margin-left: 345px;
+  }
+  .sfdf{
+    margin-left: 335px;
+  }
+  .athletic{
+    margin-left: 293px;
+  }
+  .csg{
+    margin-left: 340px;
+  }
+  .others{
+    margin-left: 295px;
+  }
+  .total{
+    margin-left: 550px;
+    color: black;
+  }
+  .cashier{
+    margin-left: 500px;
+    color: maroon;
+  }
+  .cashier1{
+    margin-left: 650px;
+    color: maroon;
+  }
+  .First{
+    margin-left: 400px;
+    color: black;
+  }
+  .Second{
+    margin-left: 382px;
+    color: black;
+  }
+  .Third{
+    margin-left: 393px;
+    color: black;
+  }
+  .Fourth{
+    margin-left: 385px;
+    color: black;
+  }
+
+  

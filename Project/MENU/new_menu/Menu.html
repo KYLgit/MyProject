@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel ="stylesheet" href = "css/Main.css">
+    
+</head>
+<body>
+    <div class="content">
+    <div class="fixed">
+    <header>
+       
+            <a href = "#box_1" class = "logo">Restobar</a>
+        <nav class="navbar">
+            <a href="#box1">
+                <button class="btn">MainDish</button>
+            </a>
+            <a href="#box2">
+                <button class="btn">Dessert</button>
+             </a>
+            <a href="#box3">
+                <button class="btn">Vegetables</button>
+            </a>
+            <a href="#box4">
+                <button class="btn">Addons</button>
+				
+            </a>
+            </a>
+            </nav>
+        
+    </header>
+   
+    
+       
+        <button class="btn"style="width: 110px; position: absolute; left: 1320px; bottom: 500px;" onclick="displayItems()">Display Item<br>Bought</button>
+        <button class="btn" style="width: 105px; position: absolute; left: 1320px; bottom: 440px;" id="box_1"onclick="ClearTotalAmount()">Clear All</button>
+		
+        
+         <p style="top: 100px; position: absolute; right:700px; font-family: Arial;">Main Dish</p>
+		
+        <div class="box1" style="bottom: 569px;left: 150px;">
+            <img src="img/Bicol Express.jpg " id="box1" style="width: 275px; height: 430px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Bicol Express</h2>
+                <p class="box1_price">137PHP</p>
+                <p class="box1_info">Made with pork simmered in coconut milk, shrimp paste, and chili peppers, this dish packs a punch of heat and savory goodness.  </p>
+                <div id="quantity panel">
+                    
+                    <button class="btn" id="add1"  	style="height: 20px; width: 30px;"onclick="addToCart('Bicol Express')" style="display: none;">+</button>
+                    <button class="btn" id="minus1" style="height: 20px; width: 30px;"onclick="minusTocart('Bicol Express')" style="display: none;">-</button>
+                    </div>
+                     
+                    
+                    </div>
+            </div>
+
+
+<div class="box1" style="bottom: 983px;left: 450px;">
+    <img src="img/Pork Adobo.jpg "style="width: 270px; height: 420px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Chicken Adobo</h2>
+        <p class="box1_price">180PHP</p>
+        <p class="box1_info">Featuring tender chicken marinated in soy sauce, vinegar, and spices, then simmered to perfection. those who enjoy bold flavors. </p>
+        <div id="quantity panel">
+            
+            <button class="btn" id="add2" style="height: 20px; width: 30px;"onclick="addToCart('Chicken Adobo')" style="display: none;">+</button>
+            <button class="btn" id="minus2" style="height: 20px; width: 30px;"onclick="minusTocart('Chicken Adobo')" style="display: none;">-</button>
+            </div>
+            
+            
+            
+            
+    </div>
+</div>
+<div class="box1" style="bottom: 1400px;left: 750px;">
+    <img src="img/Pork Sisig.jpg"style="width: 250px; height: 420px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Chrispy Sisig</h2>
+        <p class="box1_price">130PHP</p>
+        <p class="box1_info">Made with crispy fried pig's ears, jowl, and liver, this dish is served sizzling on a hot plate. </p>
+        <div id="quantity panel">
+             
+            <button class="btn" id="add3" style="height: 20px; width: 30px;"onclick="addToCart('Chrispy Sisig')" style="display: none;">+</button>
+            <button class="btn" id="minus3" style="height: 20px; width: 30px;"onclick="minusTocart('Chrispy Sisig')" style="display: none;">-</button>
+            </div>  
+            
+            
+            
+            
+    </div>
+</div>
+<div class="box1" style="bottom: 1815px;left: 1050px;">
+    <img src="img/Sinigang na baboy.jpeg" style="width: 250px; height: 400px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Sinigang na Baboy</h2>
+        <p class="box1_price">140PHP</p>
+        <p class="box1_info">Made with tender pork, fresh vegetables, and a tangy tamarind broth. This hearty dish is creating a comforting and delicious meal. </p>
+        <div id="quantity panel">
+             
+            <button class="btn" id="add4" style="height: 20px; width: 30px;"onclick="addToCart('Sinigang na Baboy')" style="display: none;">+</button>
+            <button class="btn" id="minus4" style="height: 20px; width: 30px;"onclick="minusTocart('Sinigang na Baboy')" style="display: none;">-</button>
+            </div>  
+            
+            
+            
+    </div>
+</div>
+<div class="box1" style="bottom: 1800px;left: 150px;">
+    <img src="img/Kare Kare.jpg" style="width: 250px; height: 435px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Kare Kare</h2>
+        <p class="box1_price">170PHP</p>
+        <p class="box1_info">Made with tender oxtail, tripe, and vegetables in a thick peanut sauce. This hearty dish is complemented by the earthy taste of ground toasted rice. </p>
+        <div id="quantity panel">
+            
+            <button class="btn" id="add5" style="height: 20px; width: 30px;"onclick="addToCart('Kare Kare')" style="display: none;">+</button>
+            <button class="btn" id="minus5" style="height: 20px; width: 30px;"onclick="minusTocart('Kare Kare')" style="display: none;">-</button>
+            
+            </div>  
+            
+            
+            
+    </div>
+</div>
+<div class="box1" style="bottom: 2215px;left: 450px;">
+    <img src="img/Bulalo.jpg" style="width: 250px; height: 400px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Bulalo</h2>
+        <p class="box1_price">190PHP</p>
+        <p class="box1_info">A classic Filipino beef shank soup simmered to perfection. Tender chunks of beef shank, marrow bones, infused with the natural richness of bone marrow. </p>
+        <div id="quantity panel">
+             
+            <button class="btn" id="add6" style="height: 20px; width: 30px;"onclick="addToCart('Bulalo')" style="display: none;">+</button>
+            <button class="btn" id="minus6" style="height: 20px; width: 30px;"onclick="minusTocart('Bulalo')" style="display: none;">-</button>
+            </div>  
+           
+            
+            
+    </div>
+</div>
+<div class="box1" style="bottom: 2630px;left: 750px;">
+    <img src="img/Chop Suey.jpg" style="width: 250px; height: 400px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Chop Suey</h2>
+        <p class="box1_price">120PHP</p>
+        <p class="box1_info">Delightful stir-fry dish that blends a colorful assortment of fresh vegetables with your choice of chicken, pork, or shrimp. </p>
+        <div id="quantity panel">
+             
+            <button class="btn" id="add7" style="height: 20px; width: 30px;"onclick="addToCart('Chop Suey')" style="display: none;">+</button>
+            <button class="btn" id="minus7" style="height: 20px; width: 30px;"onclick="minusTocart('Chop Suey')" style="display: none;">-</button>
+            </div>  
+            
+            
+            
+    </div>
+</div>
+<div class="box1" style="bottom: 3045px;left: 1047px;">
+    <img src="img/Pork Menudo.jpg" style="width: 250px; height: 400px;">
+    <div class="box1_in">
+        <h2 class="box1_dish">Pork Menudo</h2>
+        <p class="box1_price">150PHP</p>
+        <p class="box1_info">Made with tender pork, liver, and vegetables in a savory tomato-based sauce.  </p>
+        <div id="quantity panel">
+             
+            <button class="btn" id="add8" style="height: 20px; width: 30px;"onclick="addToCart('Pork Menudo')" style="display: none;">+</button>
+            <button class="btn" id="minus8" style="height: 20px; width: 30px;"onclick="minusTocart('Pork Menudo')" style="display: none;">-</button>
+            </div>  
+            
+            
+            
+    </div>
+    </div>
+
+
+
+
+
+      <p style="top: 1050px; position: absolute; right:700px; font-family: Arial;">Desserts</p>
+    <div class="box1" style="bottom: 2890px;left: 150px;">
+	
+        <img src="img/desserts/Halo Halo.jpg" id="box2" style="width: 300px; height: 400px;">
+        <div class="box1_in">
+            <h2 class="box1_dish">Halo Halo</h2>
+            <p class="box1_price">65PHP</p>
+            <p class="box1_info"> This colorful dessert includes shaved ice, sweetened fruits, jellies, beans, and a scoop of ube or ice cream. </p>
+            <div id="quantity panel">
+                
+                <button class="btn" id="add9" style="height: 20px; width: 30px;"onclick="addToCart('Halo Halo')" style="display: none;">+</button>
+                <button class="btn" id="minus9" style="height: 20px; width: 30px;"onclick="minusTocart('Halo Halo')" style="display: none;">-</button>
+                </div>  
+                
+                
+                
+        </div>
+    </div>   
+    <div class="box1" style="bottom: 3309px;left: 450px;">
+        <img src="img/desserts/Buko Pandan.jpg" style="width: 250px; height: 400px;">
+        <div class="box1_in">
+            <h2 class="box1_dish">Buko Pandan</h2>
+            <p class="box1_price">58PHP</p>
+            <p class="box1_info">  This dessert blends young coconut strips, pandan-flavored jelly cubes, sweetened condensed milk, and cream for a delightful mix of textures and flavors. </p>
+            <div id="quantity panel">
+                 
+                <button class="btn" id="add10" style="height: 20px; width: 30px;"onclick="addToCart('Buko Pandan')" style="display: none;">+</button>
+                <button class="btn" id="minus10" style="height: 20px; width: 30px;"onclick="minusTocart('Buko Pandan')" style="display: none;">-</button>
+                </div>  
+                
+                
+                
+        </div>
+    </div>
+    <div class="box1" style="bottom: 3725px;left: 750px;">
+        <img src="img/desserts/LecheFlan.jpg" style="width: 250px; height: 415px;">
+        <div class="box1_in">
+            <h2 class="box1_dish">Leche Flan</h2>
+            <p class="box1_price">68PHP</p>
+            <p class="box1_info">Made with rich caramelized sugar and silky smooth custard, this dessert is a delightful combination of sweet and creamy flavors. </p>
+            <div id="quantity panel">
+                 
+                <button class="btn" id="add11" style="height: 20px; width: 30px;"onclick="addToCart('Leche Flan')" style="display: none;">+</button>
+                <button class="btn" id="minus11" style="height: 20px; width: 30px;"onclick="minusTocart('Leche Flan')" style="display: none;">-</button>
+                </div>  
+                
+                
+                
+        </div>
+    </div>
+    <div class="box1" style="bottom: 4145px;left: 1047px;">
+        <img src="img/desserts/brownies.jpg" style="width: 250px; height: 400px;">
+        <div class="box1_in">
+            <h2 class="box1_dish">Brownies</h2>
+            <p class="box1_price">75PHP</p>
+            <p class="box1_info">These classic treats are perfect for satisfying your chocolate cravings and are sure to please any dessert lover</p>
+            <div id="quantity panel">
+                
+                <button class="btn" id="add12" style="height: 20px; width: 30px;"onclick="addToCart('minusTocart')" style="display: none;">+</button>
+                <button class="btn" id="minus12" style="height: 20px; width: 30px;"onclick="minusTocart('minusTocart')" style="display: none;">-</button>
+                </div>  
+                
+                
+                
+        
+            </div>
+    </div>
+
+
+
+
+		<p style="top: 1650px; position: absolute; right:700px; font-family: Arial;">Vegetables</p>
+        <div class="box1"  style="bottom: 3910px;left: 150px;">
+            <img src="img/vegtables/Ginataang Kalabasa at Sitaw.jpg" id="box3" style="width: 300px; height: 410px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Ginataang Kalabasa</h2>
+                <p class="box1_price">170PHP</p>
+                <p class="box1_info"> This hearty and nutritious dish is complemented by tender pieces of pork, shrimp, or fish, along with a medley of vegetables and spices. </p>
+                <div id="quantity panel">
+                     
+                    <button class="btn" id="add13" style="height: 20px; width: 30px;"onclick="addToCart('Ginataang Kalabasa')" style="display: none;">+</button>
+                    <button class="btn" id="minus13" style="height: 20px; width: 30px;"onclick="minusTocart('Ginataang Kalabasa')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+                    
+            </div>
+        </div>
+        <div class="box1"  style="bottom: 4325px;left: 450px;">
+            <img src="img/vegtables/Cheesy Broccoli.jpg" id="box2" style="width: 300px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Cheesy Broccoli</h2>
+                <p class="box1_price">210PHP</p>
+                <p class="box1_info"> a delightful dish that combines tender broccoli florets with a creamy cheese sauce. </p>
+                <div id="quantity panel">
+                     
+                    <button class="btn" id="add14" style="height: 20px; width: 30px;"onclick="addToCart('Cheesy Broccoli')" style="display: none;">+</button>
+                    <button class="btn" id="minus14" style="height: 20px; width: 30px;"onclick="minusTocart('Cheesy Broccoli')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+                    
+            </div>
+        </div>
+        <div class="box1"  style="bottom: 4740px;left: 750px;">
+            <img src="img/vegtables/Creamy Mushrooms.jpg" id="box2" style="width: 300px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Creamy Mushrooms</h2>
+                <p class="box1_price">159PHP</p>
+                <p class="box1_info">a luxurious dish that features tender mushrooms cooked in a rich and velvety cream sauce. </p>
+                <div id="quantity panel">
+                     
+                    <button class="btn" id="add15" style="height: 20px; width: 30px;"onclick="addToCart('Creamy Mushrooms')" style="display: none;">+</button>
+                    <button class="btn" id="minus15" style="height: 20px; width: 30px;"onclick="minusTocart('Creamy Mushrooms')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+                    
+            </div>
+        </div>
+        <div class="box1"  style="bottom: 5155px;left: 1047px;">
+            <img src="img/vegtables/Roasted Garlic and Herbs.jpg" id="box2" style="width: 300px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Garlic and Herbs</h2>
+                <p class="box1_price">180PHP</p>
+                <p class="box1_info">Tender and flavorful, our garlic and herb-infused dish is a delightful accompaniment to any meal.</p>
+                <div id="quantity panel">
+                     
+                    <button class="btn" id="add16" style="height: 20px; width: 30px;"onclick="addToCart('Garlic and Herbs')" style="display: none;">+</button>
+                    <button class="btn" id="minus16" style="height: 20px; width: 30px;"onclick="minusTocart('Garlic and Herbs')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+                    
+            </div>
+        </div>
+
+
+
+		<p style="top: 2300px; position: absolute; right:700px; font-family: Arial;">Add-ons</p>
+        <div class="box1"  style="bottom: 4955px;left: 150px;">
+            <img src="img/add ons/Bacon Strips.jpg" id="box4" style="width: 300px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Bacon Strips</h2>
+                <p class="box1_price">55PHP</p>
+                <p class="box1_info">Indulge in the irresistible flavor and crunch of our crispy bacon strips. </p>
+                <div id="quantity panel">
+                   
+                    <button class="btn" id="add17" style="height: 20px; width: 30px;"onclick="addToCart('Bacon Strips')" style="display: none;">+</button>
+                    <button class="btn" id="minus17" style="height: 20px; width: 30px;"onclick="minusTocart('Bacon Strips')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+                    
+            </div>
+        </div>
+        <div class="box1"  style="bottom: 5370px;left: 450px;">
+            <img src="img/add ons/Extra Rice.jpg" id="box2" style="width: 300px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Extra Rice</h2>
+                <p class="box1_price">28PHP</p>
+                <p class="box1_info">Our fluffy white rice is a timeless classic, perfect as a side or base for any dish.</p>
+                <div id="quantity panel">
+                     
+                    <button class="btn" id="add18" style="height: 20px; width: 30px;"onclick="addToCart('Extra Rice')" style="display: none;">+</button>
+                    <button class="btn" id="minus18" style="height: 20px; width: 30px;"onclick="minusTocart('Extra Rice')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+                    
+            </div>
+        </div>
+        <div class="box1"  style="bottom: 5785px;left: 750px;">
+            <img src="img/add ons/Fried Egg.jpg" id="box2" style="width: 320px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Fried Egg</h2>
+                <p class="box1_price">25PHP</p>
+                <p class="box1_info">Indulge in a classic favorite: our perfectly cooked sunny-side-up fried egg.</p>
+                <div id="quantity panel">
+                    
+                    <button class="btn" id="add19" style="height: 20px; width: 30px;"onclick="addToCart('Fried Egg')" style="display: none;">+</button>
+                    <button class="btn" id="minus19" style="height: 20px; width: 30px;"onclick="minusTocart('Fried Egg')" style="display: none;">-</button>
+                    </div>  
+                   
+                    
+                    
+            </div>
+        </div>
+        <div class="box1"  style="bottom: 6200px;left: 1047px;">
+            <img src="img/add ons/Garlic Bread.jpg" id="box2" style="width: 300px; height: 400px;">
+            <div class="box1_in">
+                <h2 class="box1_dish">Garlic Bread</h2>
+                <p class="box1_price">35PHP</p>
+                <p class="box1_info">Savor the aroma of freshly baked bread infused with the irresistible flavor of garlic.</p>
+                <div id="quantity panel">
+                     
+                    <button class="btn" id="add" style="height: 20px; width: 30px;" onclick="addToCart('Garlic Bread')" style="display: none;">+</button>
+                    <button class="btn" id="minus" style="height: 20px; width: 30px;" onclick="minusTocart('Garlic Bread')" style="display: none;">-</button>
+                    </div>  
+                    
+                    
+            </div>
+        </div>
+    </div>
+    </div>
+    
+<script>
+    let totalAmount = 0;
+    let itemsBought = {};
+
+function toggleButtons1(quantity) {
+    const checkbox = document.getElementById("buy" + quantity);
+    const addButton = document.getElementById("add" + quantity);
+    const minusButton = document.getElementById("minus" + quantity);
+
+    if (checkbox.checked) {
+        addButton.style.display = "inline-block";
+        minusButton.style.display = "inline-block";
+    } else {
+        addButton.style.display = "none";
+        minusButton.style.display = "none";
+    }
+}
+
+function addToCart(quantity) {
+    totalAmount += 1;
+    itemsBought[quantity] = itemsBought[quantity] ? itemsBought[quantity] + 1 : 1;
+    document.getElementById("totalAmount").innerText = "(Quantity: " + totalAmount + ")";
+}
+
+function minusTocart(quantity) {
+    if (itemsBought[quantity] > 0) {
+        totalAmount -= 1;
+        itemsBought[quantity] -= 1;
+        document.getElementById("totalAmount").innerText = "(Quantity: " + totalAmount + ")";
+    }
+}
+
+function ClearTotalAmount() {
+    totalAmount = 0;
+    itemsBought = {};
+    document.getElementById("totalAmount").innerText = "(Quantity: " + totalAmount + ")";
+}
+
+function displayItems() {
+    let result = "Items Bought:\n";
+    for (let key in itemsBought) {
+        result += itemsBought[key] + " pcs of " + key + "\n";
+    }
+    alert(result);
+}
+
+</script>
+
+	
+
+</body>
+</html>
